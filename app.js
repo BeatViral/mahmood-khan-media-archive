@@ -5,6 +5,7 @@
   const searchInput = document.getElementById("searchInput");
   const emptyState = document.getElementById("emptyState");
   const signalCount = document.getElementById("signalCount");
+  const quickFilters = document.querySelectorAll("[data-jump-category]");
   let activeCategory = "All";
 
   const categories = ["All", ...Array.from(new Set(signals.map((item) => item.category)))];
@@ -75,6 +76,16 @@
   });
 
   searchInput.addEventListener("input", renderCards);
+
+  quickFilters.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeCategory = button.dataset.jumpCategory;
+      searchInput.value = "";
+      renderFilters();
+      renderCards();
+      document.getElementById("signals").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 
   function startSignalCanvas() {
     const canvas = document.getElementById("signalCanvas");
