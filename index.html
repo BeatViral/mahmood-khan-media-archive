@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahmood Khan Media Archive</title>
+  <meta name="description" content="Mahmood Khan Media Archive: Artist, Founder and Audio Technology Builder.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="signalCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mahmood Khan Media Archive home">
+      <span class="brand-mark"></span>
+      <span>
+        <strong>Mahmood Khan</strong>
+        <small>Media Archive</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#signals">Signals</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#phatso">PHATSO</a>
+      <a href="#press-kit">Press Kit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Artist / Founder / Audio Technology Builder</p>
+        <h1>Mahmood Khan<br><span>Media Archive</span></h1>
+        <p class="hero-text">
+          A curated signal record across music, media, creator technology and audio innovation,
+          connecting the artist journey to Beat Viral, PHATSO and the next generation of creator sound tools.
+        </p>
+        <div class="hero-tags" aria-label="Archive focus areas">
+          <span>Music Proof</span>
+          <span>Founder Dossier</span>
+          <span>PHATSO System</span>
+          <span>Partner Ready</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#signals">Explore Archive</a>
+          <a class="button ghost" href="#press-kit">Open Press Kit</a>
+        </div>
+      </div>
+
+      <aside class="signal-panel" aria-label="Archive highlights">
+        <div class="scanline" aria-hidden="true"></div>
+        <div class="panel-topline">
+          <span>Signal Index</span>
+          <strong id="signalCount">00</strong>
+        </div>
+        <div class="meter-stack" aria-hidden="true">
+          <span style="--level: 71%"></span>
+          <span style="--level: 88%"></span>
+          <span style="--level: 54%"></span>
+          <span style="--level: 96%"></span>
+          <span style="--level: 63%"></span>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>R&amp;D Context</dt>
+            <dd>$1.5M+ Beat Viral investment history</dd>
+          </div>
+          <div>
+            <dt>Product</dt>
+            <dd>PHATSO Color Series</dd>
+          </div>
+          <div>
+            <dt>Archive Mode</dt>
+            <dd>Press, video, music, founder proof</dd>
+          </div>
+        </dl>
+        <div class="spectrum" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro-strip" aria-label="Positioning statement">
+      <p>
+        This archive is built for partners, journalists and creator-platform teams who need a fast,
+        credible view of Mahmood Khan's public footprint and the product vision behind PHATSO.
+      </p>
+    </section>
+
+    <section class="section" id="signals">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Signals</p>
+        <h2>Press, video, music and product proof</h2>
+      </div>
+
+      <div class="toolbar" role="region" aria-label="Archive filters">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Search source, title, region..." autocomplete="off">
+        </label>
+        <div class="filter-row" id="filterRow" aria-label="Filter by category"></div>
+      </div>
+
+      <div class="archive-grid" id="archiveGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No matching signals yet.</p>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">Founder Timeline</p>
+        <h2>From artist footprint to creator-audio system</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>01</span>
+          <h3>Music Footprint</h3>
+          <p>Songs, videos, interviews, performances and public artist proof.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Beat Viral R&amp;D</h3>
+          <p>Research, creator tools, experiments and the product thinking that shaped the system.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>PHATSO Launch</h3>
+          <p>A seven-color tone plugin series built for fast, finished creator sound.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Platform Vision</h3>
+          <p>Licensing, bundling, SDK and strategic partnership pathways for creator platforms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section phatso-band" id="phatso">
+      <div>
+        <p class="eyebrow">PHATSO System</p>
+        <h2>The sound-of-colors story</h2>
+      </div>
+      <p>
+        PHATSO turns tone into a simple color language for creators. The strategic pitch is not just
+        another plugin: it is a creator-audio layer that can live inside music, video and social production workflows.
+      </p>
+      <a class="button primary" href="https://beatviral.github.io/Phatso/" target="_blank" rel="noreferrer">View PHATSO</a>
+    </section>
+
+    <section class="section press-kit" id="press-kit">
+      <div class="section-heading">
+        <p class="eyebrow">Press Kit</p>
+        <h2>Fast materials for serious conversations</h2>
+      </div>
+      <div class="kit-grid">
+        <article>
+          <h3>Short Bio</h3>
+          <p>
+            Mahmood Khan is an artist, founder and audio technology builder connecting a public music career
+            with creator-tool development through Beat Viral and the PHATSO Color Series.
+          </p>
+        </article>
+        <article>
+          <h3>Partnership Position</h3>
+          <p>
+            PHATSO is positioned for licensing, bundling, platform integration and strategic conversations
+            with creator, video, music and artist-service companies.
+          </p>
+        </article>
+        <article>
+          <h3>Contact</h3>
+          <p>
+            Add the preferred domain email here once the archive domain is connected.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Mahmood Khan Media Archive</span>
+    <span>Artist, Founder &amp; Audio Technology Builder</span>
+  </footer>
+
+  <script src="archive-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
