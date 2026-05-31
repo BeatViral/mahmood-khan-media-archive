@@ -78,7 +78,8 @@
   searchInput.addEventListener("input", renderCards);
 
   quickFilters.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
       activeCategory = button.dataset.jumpCategory;
       searchInput.value = "";
       renderFilters();

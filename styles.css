@@ -207,21 +207,22 @@ h1 span {
   margin-top: 22px;
 }
 
-.hero-tags button {
+.hero-tags a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.06);
   color: #eef7ff;
   padding: 8px 10px;
-  font: inherit;
   font-size: 0.74rem;
   font-weight: 900;
   text-transform: uppercase;
   box-shadow: inset 0 0 22px rgba(37, 231, 255, 0.05);
-  cursor: pointer;
 }
 
-.hero-tags button:hover,
-.hero-tags button:focus-visible {
+.hero-tags a:hover,
+.hero-tags a:focus-visible {
   border-color: rgba(37, 231, 255, 0.72);
   background: rgba(37, 231, 255, 0.14);
   color: #ffffff;
