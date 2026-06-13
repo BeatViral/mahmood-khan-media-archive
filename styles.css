@@ -386,6 +386,65 @@ h1 span {
   line-height: 1.45;
 }
 
+.playlist-section {
+  display: grid;
+  grid-template-columns: 0.72fr 1fr;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.playlist-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.playlist-copy h2 {
+  max-width: 680px;
+  margin: 0;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(2.1rem, 4.8vw, 5.1rem);
+  line-height: 0.94;
+}
+
+.playlist-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.68;
+}
+
+.playlist-copy .button {
+  width: fit-content;
+}
+
+.playlist-frame {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgba(37, 231, 255, 0.34);
+  background:
+    linear-gradient(135deg, rgba(37, 231, 255, 0.12), transparent 38%),
+    rgba(2, 5, 10, 0.72);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.48), 0 0 34px rgba(37, 231, 255, 0.14);
+}
+
+.playlist-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 202, 84, 0.18);
+}
+
+.playlist-frame iframe {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #05070d;
+}
+
 .section-heading {
   display: grid;
   gap: 8px;
@@ -593,6 +652,7 @@ h1 span {
 @media (max-width: 900px) {
   .site-header,
   .hero,
+  .playlist-section,
   .phatso-band {
     grid-template-columns: 1fr;
   }

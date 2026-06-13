@@ -20,14 +20,14 @@ window.archiveSignals = [
     url: ""
   },
   {
-    title: "Official Music Video",
+    title: "Mahmood Khan Official Media Playlist",
     source: "YouTube",
-    year: "TBD",
+    year: "Archive",
     category: "Video",
     region: "Global",
     priority: "Primary",
-    description: "Replace this card with a high-signal official video link.",
-    url: ""
+    description: "Curated playlist of Mahmood Khan videos, live clips, interviews and archive media, with the Channel 9 feature kept as the flagship television signal.",
+    url: "https://www.youtube.com/playlist?list=PLG3VMCE8CkhQ"
   },
   {
     title: "Artist Profile or Streaming Page",
