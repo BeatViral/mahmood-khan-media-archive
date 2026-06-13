@@ -1,5 +1,15 @@
 window.archiveSignals = [
   {
+    title: "PHATSO Studio / PHATSO DAW",
+    source: "Beat Viral",
+    year: "2026",
+    category: "PHATSO",
+    region: "Global",
+    priority: "Flagship",
+    description: "Founder-led AI-assisted recording platform concept: record like the pros without learning sound engineering.",
+    url: "https://beatviral.github.io/PHATSO-Studio"
+  },
+  {
     title: "PHATSO Color Series Launch Page",
     source: "Beat Viral",
     year: "2026",
